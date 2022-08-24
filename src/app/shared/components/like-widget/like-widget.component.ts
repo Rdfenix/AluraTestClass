@@ -23,4 +23,8 @@ export class LikeWidgetComponent implements OnInit {
       this.id = this.uniqueIdService.generateUniqueIdWithPrefix('like-widget');
     }
   }
+
+  public like(): void {
+    this.liked.emit();
+  }
 }
